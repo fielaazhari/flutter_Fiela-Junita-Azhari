@@ -9,6 +9,7 @@ Pada section ini saya belajar tentang Introduction Mobile App Development.
 3 poin yang saya dapatkan saat pembelajaran pada section ini adalah:
 1. software terdiri dari 3 jenis yaitu web, desktop dan mobile. seperti pada gambar dibawah ini:
 ![Test](screenshots/web.png)
+![Test](Screenshots/android.png)
 ![Test](screenshots/desktop.png)
 ![Test](screenshots/mobile.png)
 2. bahasa pemrograman ada dua jenis yaitu compiler dan interpreter. seperti pada gambar dibawah ini:
