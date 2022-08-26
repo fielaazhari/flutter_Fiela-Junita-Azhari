@@ -72,3 +72,6 @@ https://play.google.com/store/apps/details?id=com.google.android.apps.adm
 
 Google Lens
 https://play.google.com/store/apps/details?id=com.google.ar.lens
+
+atau tugas soal latihan ini bisa di akses pada link gdocs:
+https://docs.google.com/document/d/1C87Wb3YZYDEzknOe-j93mz3b_HyqBVcFjkh_7xZUqvY/edit?usp=sharing
