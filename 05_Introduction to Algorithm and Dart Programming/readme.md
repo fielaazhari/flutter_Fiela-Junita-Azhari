@@ -24,4 +24,7 @@ Fungsi Main
 
 ## Task
 ### Task 01
+Implementasikan rumus luas lingkaran pada program Dart!
+
 ### Task 02
+Buatlah 3 buah variabel yang berisi string, lalu sambungkan seluruh string tersebut, dan tampilkan pada layar!
