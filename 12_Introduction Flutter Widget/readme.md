@@ -82,3 +82,6 @@ Sementara stateful widget mementingkan pada perubahan data yang dibuat dengan ex
         );
     }
     }
+
+### Output
+![task](screenshots/task.png)
