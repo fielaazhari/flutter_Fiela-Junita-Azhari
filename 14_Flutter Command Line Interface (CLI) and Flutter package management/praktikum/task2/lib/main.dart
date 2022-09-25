@@ -1,11 +1,8 @@
-import 'package:badges/badges.dart';
-import 'package:barcode_widget/barcode_widget.dart';
 import 'package:flutter/material.dart';
-import 'package:package_management/pages/barcode.dart';
-import 'package:package_management/task1/badges.dart';
+import 'package:barcode_widget/barcode_widget.dart';
 
 void main() {
-  runApp(const MaterialApp(home: MyApp()));
+  runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
@@ -13,6 +10,38 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(body: BarcodePage());
+    return MaterialApp(
+      home: Scaffold(
+          appBar: AppBar(
+            title: Text("Barcode"),
+          ),
+          body: Center(
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: <Widget>[
+                BarcodeWidget(
+                  barcode: Barcode.code128(),
+                  data: 'Altera Academy',
+                  width: 300,
+                  height: 150,
+                ),
+                SizedBox(height: 50),
+                BarcodeWidget(
+                  barcode: Barcode.code128(),
+                  data: 'Flutter Asik',
+                  width: 300,
+                  height: 150,
+                ),
+                SizedBox(height: 50),
+                BarcodeWidget(
+                  barcode: Barcode.code128(),
+                  data: 'Fiela Junita Azhari',
+                  width: 300,
+                  height: 150,
+                )
+              ],
+            ),
+          )),
+    );
   }
 }
