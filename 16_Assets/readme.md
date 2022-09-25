@@ -12,7 +12,9 @@ Pada section ini saya belajar tentang Assets.
 
 ## Task
 ![task](screenshots/task.png)
+
 ### Input
+
 #### main.dart
     import 'package:flutter/material.dart';
     import 'package:task/list.dart';
