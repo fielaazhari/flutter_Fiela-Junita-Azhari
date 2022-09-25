@@ -9,3 +9,178 @@ Pada section ini saya belajar tentang Assets.
 1. Assets adalah file yang di bundled dan di deplayed bersamaan dengan aplikasi. tipe-tipe assets, seperti: static data (JSON files), icons, images, dan font file (ttf).
 2. Image adalah image atau gambar akan membuat tampilan aplikasi menjadi lebih menarik, flutter mendukung format gambar seperti JPEG, WebP, GIF, Animated Web/GIF, PNG, BMP, dan WBMP. Menampilkan Gambar dari project asset dan internet.
 3. Font, penggunaan font dengan style tertentu akan menjadi keunikan pada aplikasi, penentuan font yang mau dipakai biasanya oleh UI designer, penerapan font menggunakan custom font atau dari package.
+
+## Task
+![task](screenshots/task.png)
+### Input
+#### main.dart
+    import 'package:flutter/material.dart';
+    import 'package:task/list.dart';
+
+    void main() {
+    runApp(const MyApp());
+    }
+
+    class MyApp extends StatelessWidget {
+    const MyApp({Key? key}) : super(key: key);
+
+    @override
+    Widget build(BuildContext context) {
+        return MaterialApp(
+        home: Scaffold(
+            appBar: AppBar(
+            title: Text("Assets"),
+            ),
+            body: GridView.builder(
+            gridDelegate:
+                SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 3),
+            itemCount: imageApp.length,
+            physics: ScrollPhysics(), // hapus kalau tidak perlu pakai scroll
+            itemBuilder: (context, index) => Padding(
+                padding: EdgeInsets.all(5),
+                child: IconButton(
+                onPressed: () {
+                    Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: (context) => MyNewPage(
+                        halaman: imageApp[index],
+                        ),
+                    ),
+                    );
+                },
+                icon: Image.network(imageApp[index]["images"]),
+                ),
+            ),
+            ),
+        ),
+        );
+    }
+    }
+
+    class MyNewPage extends StatefulWidget {
+    MyNewPage({this.halaman});
+    final halaman;
+
+    @override
+    State<MyNewPage> createState() => _MyNewPageState();
+    }
+
+    class _MyNewPageState extends State<MyNewPage> {
+    @override
+    Widget build(BuildContext context) {
+        return MaterialApp(
+        home: Scaffold(
+            appBar: AppBar(
+            title: Text("NewPage"),
+            ),
+            body: Image.network(
+            widget.halaman["images"],
+            height: double.maxFinite,
+            width: double.maxFinite,
+            fit: BoxFit.cover,
+            ),
+        ),
+        );
+    }
+    }
+
+#### list.dart
+    class Listimage {
+    final images;
+    Listimage({required this.images});
+    }
+
+    List imageApp = [
+    {
+        "images": "https://www.crushingkrisis.com/assets/Marvel-Logo-Square.jpeg",
+    },
+    {
+        "images":
+            "https://sm.ign.com/ign_ap/cover/m/marvels-av/marvels-avengers_asnp.jpg",
+    },
+    {
+        "images":
+            "https://d3avoj45mekucs.cloudfront.net/astrogempak/media/articleasset/2018/nov/avengers-endgame-poster-square-crop.jpg",
+    },
+    {
+        "images":
+            "https://thumbs.dreamstime.com/b/mint-color-elegant-aesthetic-pastel-seamless-background-foliage-wedding-pattern-light-tones-line-art-style-leaves-scandi-151677286.jpg",
+    },
+    {
+        "images":
+            "https://thumbs.dreamstime.com/b/rainbow-seamless-pattern-unique-hand-drawn-texture-cute-kids-nursery-background-pastel-colors-baby-shower-lovely-cartoon-188978295.jpg",
+    },
+    {
+        "images":
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSM3N3Gdx5KoEr96PN4kn4_hOQ-Z7EsuMF9mg&usqp=CAU",
+    },
+    {
+        "images":
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRb4hVmvsgLPWfH2BsrTveyt90XNwG2HRcOSQ&usqp=CAU",
+    },
+    {
+        "images":
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSI-agsA4x3SUGcdiAOZpQf2V2DjAJkGsufkg&usqp=CAU",
+    },
+    {
+        "images":
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6H74hEyow6_1ZZfPaMu0aNKiFqlLeC3HPKA&usqp=CAU",
+    },
+    {
+        "images":
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-2TPL5aETmPjXW7aamGXui02kcSa69F-crw&usqp=CAU",
+    },
+    {
+        "images":
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRN6xCHnOy-6-4nF_hLv4qr0NGYCv9GurBzFA&usqp=CAU",
+    },
+    {
+        "images":
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtd-SiOFVPNXIneo3ALCMs1dvM6oqUsbzmsA&usqp=CAU",
+    },
+    {
+        "images":
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQf9Bzal36cvWF0xAaHAnVU2zAHyk4nucu_g&usqp=CAU",
+    },
+    {
+        "images":
+            "https://images.rawpixel.com/image_800/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvcGRmbG93ZXJzZXQxOWIyLWV5ZS0wNC1rLXRyb3BpY2FsLWxlYXZlc18xLmpwZw.jpg?s=KTcd5p2y7QMVnGZvqWSxuC1-z66zBJ3EmiVb278CCPY",
+    },
+    {
+        "images":
+            "https://thumbs.dreamstime.com/b/pineapple-tropical-fruit-yellow-background-square-size-fresh-image-229377773.jpg",
+    },
+    {
+        "images":
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3tfHnXmlvfz979kX58_3wg8XET-_A1bDDYA&usqp=CAU",
+    },
+    {
+        "images":
+            "https://render.fineartamerica.com/images/rendered/square-dynamic/small/images/artworkimages/mediumlarge/2/13-checkered-pattern-jared-davies.jpg",
+    },
+    {
+        "images": "https://m.media-amazon.com/images/I/61-q+D7YE1L._AC_UL1001_.jpg",
+    },
+    {
+        "images":
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfvfkoKNqFq0rNCXf46ljrChX0OoaKAdCmSA&usqp=CAU",
+    },
+    {
+        "images":
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRaTXyIhW-Bexre92kE3cPwSdD7CbHOkq22Pg&usqp=CAU",
+    },
+    {
+        "images":
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUffxw_YfH-kwiYGrilBxv5iR07brHUI9nPw&usqp=CAUS",
+    },
+    ];
+
+
+### Output
+![1](screenshots/output1.png)
+![2](screenshots/output2.png)
+![3](screenshots/output3.png)
+![4](screenshots/output4.png)
+![5](screenshots/output5.png)
+![6](screenshots/output6.png)
