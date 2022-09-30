@@ -1,0 +1,89 @@
+class Listimage {
+  final images;
+  Listimage({required this.images});
+}
+
+List imageApp = [
+  {
+    "images": "https://www.crushingkrisis.com/assets/Marvel-Logo-Square.jpeg",
+  },
+  {
+    "images":
+        "https://sm.ign.com/ign_ap/cover/m/marvels-av/marvels-avengers_asnp.jpg",
+  },
+  {
+    "images":
+        "https://d3avoj45mekucs.cloudfront.net/astrogempak/media/articleasset/2018/nov/avengers-endgame-poster-square-crop.jpg",
+  },
+  {
+    "images":
+        "https://thumbs.dreamstime.com/b/mint-color-elegant-aesthetic-pastel-seamless-background-foliage-wedding-pattern-light-tones-line-art-style-leaves-scandi-151677286.jpg",
+  },
+  {
+    "images":
+        "https://thumbs.dreamstime.com/b/rainbow-seamless-pattern-unique-hand-drawn-texture-cute-kids-nursery-background-pastel-colors-baby-shower-lovely-cartoon-188978295.jpg",
+  },
+  {
+    "images":
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSM3N3Gdx5KoEr96PN4kn4_hOQ-Z7EsuMF9mg&usqp=CAU",
+  },
+  {
+    "images":
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRb4hVmvsgLPWfH2BsrTveyt90XNwG2HRcOSQ&usqp=CAU",
+  },
+  {
+    "images":
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSI-agsA4x3SUGcdiAOZpQf2V2DjAJkGsufkg&usqp=CAU",
+  },
+  {
+    "images":
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6H74hEyow6_1ZZfPaMu0aNKiFqlLeC3HPKA&usqp=CAU",
+  },
+  {
+    "images":
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-2TPL5aETmPjXW7aamGXui02kcSa69F-crw&usqp=CAU",
+  },
+  {
+    "images":
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRN6xCHnOy-6-4nF_hLv4qr0NGYCv9GurBzFA&usqp=CAU",
+  },
+  {
+    "images":
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtd-SiOFVPNXIneo3ALCMs1dvM6oqUsbzmsA&usqp=CAU",
+  },
+  {
+    "images":
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQf9Bzal36cvWF0xAaHAnVU2zAHyk4nucu_g&usqp=CAU",
+  },
+  {
+    "images":
+        "https://images.rawpixel.com/image_800/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvcGRmbG93ZXJzZXQxOWIyLWV5ZS0wNC1rLXRyb3BpY2FsLWxlYXZlc18xLmpwZw.jpg?s=KTcd5p2y7QMVnGZvqWSxuC1-z66zBJ3EmiVb278CCPY",
+  },
+  {
+    "images":
+        "https://thumbs.dreamstime.com/b/pineapple-tropical-fruit-yellow-background-square-size-fresh-image-229377773.jpg",
+  },
+  {
+    "images":
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3tfHnXmlvfz979kX58_3wg8XET-_A1bDDYA&usqp=CAU",
+  },
+  {
+    "images":
+        "https://render.fineartamerica.com/images/rendered/square-dynamic/small/images/artworkimages/mediumlarge/2/13-checkered-pattern-jared-davies.jpg",
+  },
+  {
+    "images": "https://m.media-amazon.com/images/I/61-q+D7YE1L._AC_UL1001_.jpg",
+  },
+  {
+    "images":
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfvfkoKNqFq0rNCXf46ljrChX0OoaKAdCmSA&usqp=CAU",
+  },
+  {
+    "images":
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRaTXyIhW-Bexre92kE3cPwSdD7CbHOkq22Pg&usqp=CAU",
+  },
+  {
+    "images":
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUffxw_YfH-kwiYGrilBxv5iR07brHUI9nPw&usqp=CAUS",
+  },
+];
