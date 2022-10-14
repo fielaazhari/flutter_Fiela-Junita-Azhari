@@ -1,0 +1,188 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "statefulwidget",
+            "cwd": "12_Introduction Flutter Widget\\praktikum\\statefulwidget",
+            "request": "launch",
+            "type": "dart"
+        },
+        {
+            "name": "statefulwidget (profile mode)",
+            "cwd": "12_Introduction Flutter Widget\\praktikum\\statefulwidget",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "profile"
+        },
+        {
+            "name": "statefulwidget (release mode)",
+            "cwd": "12_Introduction Flutter Widget\\praktikum\\statefulwidget",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "release"
+        },
+        {
+            "name": "material",
+            "cwd": "13_Platform Widget\\praktikum\\material",
+            "request": "launch",
+            "type": "dart"
+        },
+        {
+            "name": "material (profile mode)",
+            "cwd": "13_Platform Widget\\praktikum\\material",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "profile"
+        },
+        {
+            "name": "material (release mode)",
+            "cwd": "13_Platform Widget\\praktikum\\material",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "release"
+        },
+        {
+            "name": "task1",
+            "cwd": "14_Flutter Command Line Interface (CLI) and Flutter package management\\praktikum\\task1",
+            "request": "launch",
+            "type": "dart"
+        },
+        {
+            "name": "task1 (profile mode)",
+            "cwd": "14_Flutter Command Line Interface (CLI) and Flutter package management\\praktikum\\task1",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "profile"
+        },
+        {
+            "name": "task1 (release mode)",
+            "cwd": "14_Flutter Command Line Interface (CLI) and Flutter package management\\praktikum\\task1",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "release"
+        },
+        {
+            "name": "task2",
+            "cwd": "14_Flutter Command Line Interface (CLI) and Flutter package management\\praktikum\\task2",
+            "request": "launch",
+            "type": "dart"
+        },
+        {
+            "name": "task2 (profile mode)",
+            "cwd": "14_Flutter Command Line Interface (CLI) and Flutter package management\\praktikum\\task2",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "profile"
+        },
+        {
+            "name": "task2 (release mode)",
+            "cwd": "14_Flutter Command Line Interface (CLI) and Flutter package management\\praktikum\\task2",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "release"
+        },
+        {
+            "name": "section15",
+            "cwd": "15_Flutter Layout1\\praktikum\\section15",
+            "request": "launch",
+            "type": "dart"
+        },
+        {
+            "name": "section15 (profile mode)",
+            "cwd": "15_Flutter Layout1\\praktikum\\section15",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "profile"
+        },
+        {
+            "name": "section15 (release mode)",
+            "cwd": "15_Flutter Layout1\\praktikum\\section15",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "release"
+        },
+        {
+            "name": "task2",
+            "cwd": "15_Flutter Layout1\\praktikum\\task2",
+            "request": "launch",
+            "type": "dart"
+        },
+        {
+            "name": "task2 (profile mode)",
+            "cwd": "15_Flutter Layout1\\praktikum\\task2",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "profile"
+        },
+        {
+            "name": "task2 (release mode)",
+            "cwd": "15_Flutter Layout1\\praktikum\\task2",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "release"
+        },
+        {
+            "name": "task",
+            "cwd": "16_Assets\\praktikum\\task",
+            "request": "launch",
+            "type": "dart"
+        },
+        {
+            "name": "task (profile mode)",
+            "cwd": "16_Assets\\praktikum\\task",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "profile"
+        },
+        {
+            "name": "task (release mode)",
+            "cwd": "16_Assets\\praktikum\\task",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "release"
+        },
+        {
+            "name": "task",
+            "cwd": "weekly1\\praktikum\\task",
+            "request": "launch",
+            "type": "dart"
+        },
+        {
+            "name": "task (profile mode)",
+            "cwd": "weekly1\\praktikum\\task",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "profile"
+        },
+        {
+            "name": "task (release mode)",
+            "cwd": "weekly1\\praktikum\\task",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "release"
+        },
+        {
+            "name": "task",
+            "cwd": "weekly2\\praktikum\\task",
+            "request": "launch",
+            "type": "dart"
+        },
+        {
+            "name": "task (profile mode)",
+            "cwd": "weekly2\\praktikum\\task",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "profile"
+        },
+        {
+            "name": "task (release mode)",
+            "cwd": "weekly2\\praktikum\\task",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "release"
+        }
+    ]
+}
