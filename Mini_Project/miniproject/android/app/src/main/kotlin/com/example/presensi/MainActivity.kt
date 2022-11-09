@@ -1,4 +1,4 @@
-package com.example.miniproject
+package com.example.presensi
 
 import io.flutter.embedding.android.FlutterActivity
 

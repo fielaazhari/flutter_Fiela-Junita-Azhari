@@ -1,6 +1,6 @@
 {
-    "name": "miniproject",
-    "short_name": "miniproject",
+    "name": "presensi",
+    "short_name": "presensi",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",
