@@ -4,7 +4,7 @@ Nomor Urut: 1_011FLB_40
 Nama: Fiela Junita Azhari
 
 ## Task
-![task21](../screenshots/task.png)
+![task](../screenshots/task.png)
 ### Input task1_setstate
 #### models (m_contacts.dart)
     class ContactModel {
@@ -608,19 +608,6 @@ Nama: Fiela Junita Azhari
     }
 
 ### Output task1_setstate
-![1](../screenshots/task1output1.png)
-![2](../screenshots/task1output2.png)
-![3](../screenshots/task1output3.png)
-![4](../screenshots/task1output4.png)
-![5](../screenshots/task1output5.png)
-![6](../screenshots/task1output6.png)
-![7](../screenshots/task1output7.png)
 
 ### Output task2_provider
-![1](../screenshots/task2output1.png)
-![2](../screenshots/task2output2.png)
-![3](../screenshots/task2output3.png)
-![4](../screenshots/task2output4.png)
-![5](../screenshots/task2output5.png)
-![6](../screenshots/task2output6.png)
-![7](../screenshots/task2output7.png)
+
