@@ -615,6 +615,7 @@ Nama: Fiela Junita Azhari
 ![5](../screenshots/task1output5.png)
 ![6](../screenshots/task1output6.png)
 ![7](../screenshots/task1output7.png)
+
 ### Output task2_provider
 ![1](../screenshots/task2output1.png)
 ![2](../screenshots/task2output2.png)
