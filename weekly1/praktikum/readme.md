@@ -6,75 +6,236 @@ Nama: Fiela Junita Azhari
 ## Task
 ![task](../screenshots/task.png)
 ### Input
-#### main.dart
-    import 'package:flutter/material.dart';
-    import 'package:task/image.dart';
-
-    void main() {
-    runApp(const MyApp());
+#### models (m_user.dart)
+    // ignore_for_file: public_member_api_docs, sort_constructors_first
+    class User {
+    String name;
+    String email;
+    String message;
+    User({
+        required this.name,
+        required this.email,
+        required this.message,
+    });
     }
 
-    class MyApp extends StatelessWidget {
-    const MyApp({super.key});
+#### pages (home_page.dart)
+    import 'package:email_validator/email_validator.dart';
+    import 'package:flutter/material.dart';
+    import 'package:provider/provider.dart';
+    import 'package:weekly1/models/m_user.dart';
+    import 'package:weekly1/pages/home/home_view_model.dart';
+
+    class HomePage extends StatefulWidget {
+    const HomePage({super.key});
 
     @override
-    Widget build(BuildContext context) {
-        return MaterialApp(
-        home: Scaffold(
-            appBar: AppBar(
-            title: Text("FielaApp"),
-            ),
-            body: GridView.builder(
-            gridDelegate:
-                SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 1),
-            itemCount: imageApp.length,
-            physics: ScrollPhysics(), // hapus kalau tidak perlu pakai scroll
-            itemBuilder: (context, index) => Padding(
-                padding: EdgeInsets.all(0.5),
-                child: IconButton(
-                onPressed: () {
-                    Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                        builder: (context) => MyNewPage(
-                        halaman: imageApp[index],
-                        ),
-                    ),
-                    );
-                },
-                icon: Image.network(imageApp[index]["images"]),
+    State<HomePage> createState() => _HomePageState();
+    }
+
+    class _HomePageState extends State<HomePage> {
+    final formKey = GlobalKey<FormState>();
+    final TextEditingController _nameController = TextEditingController();
+    final TextEditingController _emailController = TextEditingController();
+    final TextEditingController _messageController = TextEditingController();
+
+    void showUserDialog(User user) {
+        showDialog(
+        context: context,
+        builder: (context) {
+            return AlertDialog(
+            content: SizedBox(
+                height: 100,
+                width: 100,
+                child: ListView(
+                children: [
+                    Text('Name: ${user.name}'),
+                    Text('Email: ${user.email}'),
+                    Text('Message: ${user.message}'),
+                ],
                 ),
             ),
-            ),
-        ),
+            );
+        },
         );
     }
-    }
 
-    class MyNewPage extends StatefulWidget {
-    MyNewPage({this.halaman});
-    final halaman;
-
-    @override
-    State<MyNewPage> createState() => _MyNewPageState();
-    }
-
-    class _MyNewPageState extends State<MyNewPage> {
     @override
     Widget build(BuildContext context) {
-        return MaterialApp(
-        home: Scaffold(
-            appBar: AppBar(
-            title: Text("NewPage"),
+        return Scaffold(
+        appBar: AppBar(
+            backgroundColor: Colors.white,
+            centerTitle: false,
+            title: Image.asset(
+            'assets/images/kalava250.png',
+            height: 40,
             ),
-            body: Image.network(
-            widget.halaman["images"],
-            height: double.maxFinite,
-            width: double.maxFinite,
-            fit: BoxFit.cover,
+        ),
+        body: Form(
+            key: formKey,
+            child: CustomScrollView(
+            slivers: [
+                SliverAppBar(
+                expandedHeight: 300,
+                // title: const Text('Wellcome to our page\n we are here to make '),
+                flexibleSpace: FlexibleSpaceBar(
+                    title: Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: <Widget>[
+                        Flexible(
+                        flex: 3,
+                        child: Container(),
+                        ),
+                        const Flexible(
+                        flex: 3,
+                        child: Text(
+                            "Kalava menyediakan layanan pembuatan website, dan aplikasi mobile berkualitas",
+                            textAlign: TextAlign.center,
+                            style: TextStyle(
+                                fontSize: 16, fontWeight: FontWeight.bold),
+                        ),
+                        ),
+                        const SizedBox(
+                        height: 10,
+                        ),
+                        const Flexible(
+                        flex: 3,
+                        child: Text(
+                            'Kalava adalah website yang menyediakan\nlayanan dalam pembuatan aplikasi \nmobile, dan website.',
+                            textAlign: TextAlign.center,
+                            style: TextStyle(
+                                fontSize: 10, fontWeight: FontWeight.bold)),
+                        ),
+                    ],
+                    ),
+                    background: Image.asset(
+                    'assets/images/wellcome.jpg',
+                    fit: BoxFit.cover,
+                    ),
+                ),
+                ),
+                SliverToBoxAdapter(
+                child: buildContactUs(),
+                ),
+            ],
             ),
         ),
         );
+    }
+
+    Widget buildContactUs() {
+        return Padding(
+        padding: const EdgeInsets.all(16.0),
+        child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+            const Text(
+                'Contact Us',
+                style: TextStyle(fontSize: 28, fontWeight: FontWeight.w600),
+            ),
+            const SizedBox(
+                height: 16,
+            ),
+            const Text(
+                'Name: ',
+                style: TextStyle(fontSize: 16),
+            ),
+            const SizedBox(
+                height: 8,
+            ),
+            TextFormField(
+                controller: _nameController,
+                decoration: const InputDecoration(
+                hintText: 'Name',
+                border: OutlineInputBorder(),
+                ),
+                validator: (name) {
+                if (name!.isEmpty) {
+                    return 'Add Name Properly';
+                }
+                return null;
+                },
+            ),
+            const SizedBox(
+                height: 16,
+            ),
+            const Text(
+                'Email: ',
+                style: TextStyle(fontSize: 16),
+            ),
+            const SizedBox(
+                height: 8,
+            ),
+            TextFormField(
+                controller: _emailController,
+                decoration: const InputDecoration(
+                hintText: 'Email',
+                border: OutlineInputBorder(),
+                ),
+                validator: (email) {
+                if (email != null && !EmailValidator.validate(email)) {
+                    return 'Enter a valid email';
+                }
+                return null;
+                },
+            ),
+            const SizedBox(
+                height: 16,
+            ),
+            const Text(
+                'Message: ',
+                style: TextStyle(fontSize: 16),
+            ),
+            const SizedBox(
+                height: 8,
+            ),
+            TextFormField(
+                controller: _messageController,
+                maxLines: 8,
+                maxLength: 255,
+                decoration: const InputDecoration(
+                hintText: 'What can we help you with?',
+                border: OutlineInputBorder(),
+                ),
+                validator: (message) {
+                if (message!.isEmpty) {
+                    return 'Enter a message';
+                }
+                return null;
+                },
+            ),
+            ElevatedButton(
+                onPressed: () {
+                final isValidForm = formKey.currentState!.validate();
+                if (isValidForm) {
+                    User user = User(
+                        name: _nameController.text,
+                        email: _emailController.text,
+                        message: _messageController.text);
+                    showUserDialog(user);
+                    Provider.of<HomeViewModel>(context, listen: false)
+                        .addUser(user);
+                }
+                },
+                child: const Text('Submit'),
+            ),
+            ],
+        ),
+        );
+    }
+    }
+
+#### pages (home_view_model.dart)
+    import 'package:flutter/material.dart';
+    import 'package:weekly1/models/m_user.dart';
+
+    class HomeViewModel extends ChangeNotifier {
+    final List<User> _users = [];
+    List<User> get users => _users;
+
+    addUser(User user) {
+        _users.add(user);
+        notifyListeners();
     }
     }
 
@@ -91,8 +252,46 @@ Nama: Fiela Junita Azhari
     },
     ];
 
+#### main.dart
+    import 'package:flutter/material.dart';
+    import 'package:provider/provider.dart';
+    import 'package:weekly1/pages/home/home_page.dart';
+    import 'package:weekly1/pages/home/home_view_model.dart';
 
+    void main() {
+    runApp(const MyApp());
+    }
+
+    class MyApp extends StatelessWidget {
+    const MyApp({Key? key}) : super(key: key);
+
+    // This widget is the root of your application.
+    @override
+    Widget build(BuildContext context) {
+        return MultiProvider(
+        providers: [
+            ChangeNotifierProvider(
+            create: (context) => HomeViewModel(),
+            ),
+        ],
+        child: MaterialApp(
+            debugShowCheckedModeBanner: false,
+            title: 'Weekly Task 1',
+            theme: ThemeData(
+                primarySwatch: Colors.green,
+            ),
+            home: const HomePage()),
+        );
+    }
+    }
+
+#### assets
+![1](weekly1/assets/images/kalava250.png)
+![2](weekly1/assets/images/wellcome.jpg)
 ### Output
-![output](../screenshots/output.png)
-
-#### Maaf pak, saya belum selesai mengerjakan tugasnya
+![1](../screenshots/output1.png)
+![2](../screenshots/output2.png)
+![3](../screenshots/output3.png)
+![4](../screenshots/output4.png)
+![5](../screenshots/output5.png)
+![6](../screenshots/output6.png)
