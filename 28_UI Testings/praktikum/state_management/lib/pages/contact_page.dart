@@ -3,6 +3,8 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:state_management/bloc/contact/contact_bloc.dart';
 import 'package:state_management/components/task_item.dart';
 
+
+
 class ContactPage extends StatelessWidget {
   const ContactPage({
     Key? key,

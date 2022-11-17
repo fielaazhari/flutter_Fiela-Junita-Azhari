@@ -4,6 +4,7 @@ import 'package:state_management/bloc/contact/contact_bloc.dart';
 import 'package:state_management/bloc/theme/theme_bloc.dart';
 import 'package:state_management/pages/home_page.dart';
 
+
 void main() {
   runApp(
     MultiBlocProvider(

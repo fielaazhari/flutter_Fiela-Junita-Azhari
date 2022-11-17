@@ -11,7 +11,7 @@ class ContactBloc extends Bloc<ContactEvent, ContactState> {
       await Future<void>.delayed(const Duration(seconds: 2));
       emit(
         ContactLoaded(
-          items: const [ContactModel(name: 'Rayhan', phone: '082222213123')],
+          items: const [ContactModel(name: 'Fiela', phone: '08119111706')],
         ),
       );
     });
