@@ -267,9 +267,9 @@ Nama: Fiela Junita Azhari
 
 ### Output Task1
 [1](../screenshots/task1output.mp4)
-![2](../screenshots/task1output1.png)
+![1](../screenshots/task1output1.png)
 ![2](../screenshots/task1output2.png)
-![3](../screenshots/task2output3.png)
+![3](../screenshots/task1output3.png)
 ### Output Task2
 ![1](../screenshots/task2output1.png)
 ![2](../screenshots/task2output2.png)
