@@ -4,7 +4,7 @@ Nomor Urut: 1_011FLB_40
 Nama: Fiela Junita Azhari
 
 ## Task
-
+![task](../screenshots/task.png)
 ### Input Task1
 #### main.dart
     import 'package:flutter/material.dart';
@@ -266,5 +266,16 @@ Nama: Fiela Junita Azhari
     }
 
 ### Output Task1
-
+[video](../screenshots/task1output.mp4)
+![1](../screenshots/task1output1.png)
+![2](../screenshots/task1output2.png)
+![3](../screenshots/task1output3.png)
 ### Output Task2
+![1](../screenshots/task2output1.png)
+![2](../screenshots/task2output2.png)
+![3](../screenshots/task2output3.png)
+![4](../screenshots/task2output4.png)
+![5](../screenshots/task2output5.png)
+![6](../screenshots/task2output6.png)
+![7](../screenshots/task2output7.png)
+![8](../screenshots/task2output8.png)
