@@ -1,8 +1,8 @@
 List chat_data = [
   {
     "img": "assets/images/profile.png",
-    "name": "Rayhan",
-    "text": "Saya Rayhan",
+    "name": "Fiela",
+    "text": "Saya Fiela",
     "date": "5:23 PM",
     "badge": 0,
     "isGroup": false
@@ -18,7 +18,7 @@ List chat_data = [
   {
     "img": "assets/images/nadiem.png",
     "name": "Nadiem Makarim",
-    "text": "Gimana ray project nya?",
+    "text": "Halo Fiela apa kabar?",
     "date": "2:49 PM",
     "badge": 1,
     "isGroup": false
@@ -26,7 +26,7 @@ List chat_data = [
   {
     "img": "assets/images/deddy.jpg",
     "name": "Deddy Corbuzier",
-    "text": "Bro besok dateng ke podcast gua ya",
+    "text": "POdcast yuk",
     "date": "1:04 PM",
     "badge": 1,
     "isGroup": false
@@ -34,7 +34,7 @@ List chat_data = [
   {
     "img": "assets/images/messi.jpg",
     "name": "Lionel Messi",
-    "text": "Thanks for the advice Ray",
+    "text": "Thanks for the advice Fiela",
     "date": "Sat",
     "badge": 1,
     "isGroup": false
@@ -42,7 +42,7 @@ List chat_data = [
   {
     "img": "assets/images/pep.jpg",
     "name": "Pep Guardiola",
-    "text": "Would you like to join Manchester City?",
+    "text": "Would you like to join for supporter?",
     "date": "Fri",
     "badge": 0,
     "isGroup": false
