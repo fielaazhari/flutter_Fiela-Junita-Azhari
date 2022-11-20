@@ -4,6 +4,9 @@ Nomor Urut: 1_011FLB_40
 Nama: Fiela Junita Azhari
 
 ## Task
+![1](../screenshots/task1.png)
+![2](../screenshots/task2.png)
+![3](../screenshots/task3.png)
 ### Input
 #### cupertino (cupertino_home.dart)
     import 'package:flutter/cupertino.dart';
