@@ -11,10 +11,10 @@ class MyDrawer extends StatelessWidget {
       children: [
         UserAccountsDrawerHeader(
           accountName: const Text(
-            "Rayhan Naufal",
+            "Fiela Junita Azhari",
             style: TextStyle(fontSize: 18, fontWeight: FontWeight.w600),
           ),
-          accountEmail: const Text("+62 82299982018"),
+          accountEmail: const Text("+62 8119111706"),
           currentAccountPicture: GestureDetector(
             onTap: () {},
             child: const CircleAvatar(

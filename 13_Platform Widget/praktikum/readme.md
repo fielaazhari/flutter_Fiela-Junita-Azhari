@@ -304,10 +304,10 @@ Nama: Fiela Junita Azhari
         children: [
             UserAccountsDrawerHeader(
             accountName: const Text(
-                "Rayhan Naufal",
-                style: TextStyle(fontSize: 18, fontWeight: FontWeight.w600),
-            ),
-            accountEmail: const Text("+62 82299982018"),
+            "Fiela Junita Azhari",
+            style: TextStyle(fontSize: 18, fontWeight: FontWeight.w600),
+          ),
+          accountEmail: const Text("+62 8119111706"),
             currentAccountPicture: GestureDetector(
                 onTap: () {},
                 child: const CircleAvatar(

@@ -6,7 +6,7 @@ import 'package:flutter/src/widgets/framework.dart';
 import 'package:telegram/widgets/drawer.dart';
 
 
-import 'json/chat_json.dart';
+import '../json/chat_json.dart';
 
 class Home extends StatefulWidget {
   const Home({Key? key}) : super(key: key);
