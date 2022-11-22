@@ -250,7 +250,7 @@ Nama: Fiela Junita Azhari
     {
         "img": "assets/images/nadiem.png",
         "name": "Nadiem Makarim",
-        "text": "Halo Fiela apa kabar?",
+        "text": "Bagaimana MSIB Fiela?",
         "date": "2:49 PM",
         "badge": 1,
         "isGroup": false
@@ -258,7 +258,7 @@ Nama: Fiela Junita Azhari
     {
         "img": "assets/images/deddy.jpg",
         "name": "Deddy Corbuzier",
-        "text": "POdcast yuk",
+        "text": "Bro besok dateng ke podcast gua ya",
         "date": "1:04 PM",
         "badge": 1,
         "isGroup": false
@@ -266,7 +266,7 @@ Nama: Fiela Junita Azhari
     {
         "img": "assets/images/messi.jpg",
         "name": "Lionel Messi",
-        "text": "Thanks for the advice Fiela",
+        "text": "Thanks for the Support",
         "date": "Sat",
         "badge": 1,
         "isGroup": false
@@ -274,7 +274,7 @@ Nama: Fiela Junita Azhari
     {
         "img": "assets/images/pep.jpg",
         "name": "Pep Guardiola",
-        "text": "Would you like to join for supporter?",
+        "text": "Would you like to join Supporter?",
         "date": "Fri",
         "badge": 0,
         "isGroup": false
@@ -288,6 +288,7 @@ Nama: Fiela Junita Azhari
         "isGroup": false
     }
     ];
+
 
 #### widgets (drawer.dart)
     import 'package:flutter/material.dart';
