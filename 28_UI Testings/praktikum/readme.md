@@ -649,8 +649,7 @@ Nama: Fiela Junita Azhari
     }
 
 ### Output
-![test terminal](../screenshots/output.png)
-![1 sengaja error](../screenshots/outputt.png)
+![output test](../screenshots/output.png)
 ![1](../screenshots/output1.png)
 ![2](../screenshots/output2.png)
 ![3](../screenshots/output3.png)
