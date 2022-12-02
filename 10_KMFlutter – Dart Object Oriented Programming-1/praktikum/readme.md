@@ -7,63 +7,73 @@ Nama: Fiela Junita Azhari
 ## Task
 ![task1](../screenshots/task1.png)
 ![task2](../screenshots/task2.png)
-### jawab
-### animal_class
-    class Animal {
-    Map<String, int> weight = {
-        'Ayam': 900,
-        'Kucing': 120,
-        'Ikan': 140,
-        'Semut': 540
-    };
-    }
-
-### car_class
-    class Car {
-    int max_load = 2000;
-    List animals = ['Ayam', 'Kucing', 'Ikan'];
-
-    List addAnimals(int max_load, int car_load) {
-        if (max_load - car_load >= 600) {
-        animals.add('Semut');
-        }
-        return animals;
-    }
-
-    int totalLoad(Map<String, int> weight, List animals, int car_load) {
-        weight.forEach((key, value) {
-        for (String animal in animals) {
-            if (animal == key) {
-            car_load += value;
-            }
-        }
-        });
-        return car_load;
-    }
-    }
-
-### task.dart
 ### input 
-    import 'animal_class.dart';
-    import 'car_class.dart';
+### animal.dart
+    class Animal{
+    var name;
+    var weight  = 0;
+    
+    }
 
-    void main(List<String> args) {
-    var animal = Animal();
-    var car = Car();
-    int max_load = car.max_load;
-    List animals = car.animals;
-    int car_load = 0;
+### car.dart
+    import 'animal.dart';
 
-    print('Before adding animal = $animals');
+    class car {
+    var capacity = 0;
+    List<Animal> load = [];
 
-    print(
-        'Total Load before adding animal = ${Car().totalLoad(animal.weight, animals, car_load)} ');
+    void addLoad (Animal add){
+        if (capacity >= add.weight) {
+        load.add(add);
+        capacity -= add.weight;
+        print('${add.name} berhasil ditambahkan');
+        } else {
+        print('${add.name} tidak memenuhi kapasitas');
+        }
+    }
 
-    List new_load = Car().addAnimals(max_load, car_load);
-    print('After adding animal = ${new_load}');
+    // task 2
+    int totalLoad(){
+        var result = 0;
+        for (var i in load){
+        result += i.weight;
+        }
+        return result;
+    }
+    }
 
-    print(
-        'Total Load after adding animal = ${Car().totalLoad(animal.weight, new_load, car_load)}');
+### main.dart
+    import 'animal.dart';
+    import 'car.dart';
+
+    void main() {
+    var hamster = new Animal();
+    hamster.name = 'Hamster';
+    hamster.weight = 40;
+
+    var kucing = new Animal();
+    kucing.name = 'Kucing';
+    kucing.weight = 70;
+
+    var kelinci = new Animal();
+    kelinci.name = 'Kelinci';
+    kelinci.weight = 40;
+
+    var truk = car();
+    truk.capacity = 110;
+    truk.addLoad(hamster);
+    truk.addLoad(kucing);
+    truk.addLoad(kelinci);
+
+    print('Hewan yang ada di dalam mobil : ');
+    var nomer = 1;
+    for (var i in truk.load) {
+        print('$nomer. ${i.name}');
+        nomer++;
+    }
+
+    // Task 2
+    print('Total Muatan yang terdapat pada Mobil adalah : ${truk.totalLoad()}');
     }
 
 ### output
